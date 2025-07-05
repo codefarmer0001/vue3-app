@@ -9,6 +9,9 @@ TAR_FILE="dist.tgz"
 TARGET_DIR="demo"
 BUILD_CMD="npm run build:prod"
 
+git reset --hard
+git pull origin main
+
 # ==== 本地操作 ====
 echo "🧹 清理本地构建文件..."
 rm -rf $DIST_DIR $TAR_FILE
