@@ -9,8 +9,8 @@
       <h3>接口地址</h3>
       <div class="code-block">
         <div class="code-header">
-          <span>POST /api/order/create</span>
-          <button @click="copyCode('POST /api/order/create')" class="copy-btn">复制</button>
+          <span>POST /demo/api/order/create</span>
+          <button @click="copyCode('POST /demo/api/order/create')" class="copy-btn">复制</button>
         </div>
       </div>
 
@@ -123,7 +123,7 @@ const successResponse = `{
 
 const jsExample = `// 使用 fetch 调用接口
 async function createOrder(amount, merchantNo, encryptType, secret) {
-  const response = await fetch('/api/order/create', {
+  const response = await fetch('/demo/api/order/create', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
