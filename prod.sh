@@ -7,7 +7,7 @@ REMOTE_DIR="/usr/local/nginx/html/demo"
 DIST_DIR="dist"
 TAR_FILE="dist.tgz"
 TARGET_DIR="demo"
-BUILD_CMD="npm run build:prod"
+BUILD_CMD="npm run build"
 
 git reset --hard
 git pull origin main
