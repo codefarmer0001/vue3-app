@@ -3,7 +3,7 @@
 # ==== 可配置变量 ====
 REMOTE_USER="root"
 REMOTE_HOST="47.236.201.39"
-REMOTE_DIR="/usr/local/nginx/html/demo"
+REMOTE_DIR="/usr/local/nginx/html"
 DIST_DIR="dist"
 TAR_FILE="dist.tgz"
 TARGET_DIR="demo"
