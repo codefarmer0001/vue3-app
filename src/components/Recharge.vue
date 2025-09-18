@@ -83,6 +83,12 @@ async function handleRecharge() {
     const { ok, data } = await createOrder(amount.value, encryptType.value, merchantNo.value, merchantSecrets[merchantNo.value], merchantOrderNo.value)
     if (ok) {
       message.value = '充值成功！订单信息：\n' + JSON.stringify(data, null, 2)
+      
+      // 检查返回数据中是否有收银台地址
+      if (data && data.data && data.data.payUrl) {
+        // 跳转到收银台地址
+        window.location.href = data.data.payUrl
+      } 
     } else {
       message.value = data.message || '充值失败'
     }
