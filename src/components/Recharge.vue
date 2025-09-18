@@ -19,7 +19,7 @@
         <option value="YJ749567">YJ749567</option>
         <option value="VG223937">VG223937</option>
       </select>
-      <label for="merchantOrderNo" style="margin-top:12px;display:block;">商户订单号：</label>
+      <!-- <label for="merchantOrderNo" style="margin-top:12px;display:block;">商户订单号：</label>
       <input
         id="merchantOrderNo"
         v-model="merchantOrderNo"
@@ -28,7 +28,7 @@
         required
         :disabled="loading"
         style="width:100%;padding:8px;margin-bottom:16px;border-radius:4px;border:1px solid #ccc;font-size:16px;"
-      />
+      /> -->
       <label for="encryptType" style="margin-top:12px;display:block;">加密方式：</label>
       <select id="encryptType" v-model="encryptType" :disabled="loading" required style="width:100%;padding:8px;margin-bottom:16px;border-radius:4px;border:1px solid #ccc;font-size:16px;">
         <option value="" disabled selected>请选择加密方式</option>
@@ -73,10 +73,10 @@ async function handleRecharge() {
     message.value = '请选择加密方式';
     return;
   }
-  if (!merchantOrderNo.value) {
-    message.value = '请输入商户订单号';
-    return;
-  }
+  // if (!merchantOrderNo.value) {
+  //   message.value = '请输入商户订单号';
+  //   return;
+  // }
   loading.value = true
   message.value = ''
   try {
